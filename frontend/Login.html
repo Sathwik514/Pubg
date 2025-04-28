@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+     <nav>
+        <nav class="navbar">
+            <img src="logo.jpg" alt="PUBG" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="Game Info.html">Game Info</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Login to Your Account</h2>
+        <form class="space-y-4">
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div>
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="remember" class="mr-2">
+                <label for="remember" class="text-gray-700 text-sm">Remember Me</label>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Login</button>
+        </form>
+        <p class="text-center text-gray-600 text-sm mt-4">
+            <a href="#" class="hover:text-blue-500 focus:outline-none focus:shadow-outline">Forgot your password?</a>
+        </p>
+        <p class="text-center text-gray-600 text-sm mt-2">
+            Don't have an account? <a href="#" class="text-blue-500 hover:text-blue-700 focus:outline-none focus:shadow-outline">Register</a>
+        </p>
+    </div>
+</body>
+</html>
